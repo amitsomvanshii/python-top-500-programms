@@ -1,39 +1,30 @@
 import random
+print("welcome to rock paper scissor game")
+print("1 = rock, 2 = paper, 3 = scissor")
 
-print("Rock Paper Scissors Game")
-print("1 = Rock, 2 = Paper, 3 = Scissors")
-
-# User input
-user = int(input("Enter your choice (1/2/3): "))
-
-# Computer choice
+user_1 = input("enter your choise: ")
+if user_1 == 1:
+    print("rock")
+elif user_1 == 2:
+    print("paper")
+else: 
+    print("scissor")
+    
 computer = random.randint(1, 3)
-
-# Show computer choice
-if computer == 1:
-    print("Computer chose: Rock")
-elif computer == 2:
-    print("Computer chose: Paper")
+if computer ==1:
+    print("rock")
+elif computer ==2:
+    print("paper")
 else:
-    print("Computer chose: Scissors")
-
-# Show user choice
-if user == 1:
-    print("You chose: Rock")
-elif user == 2:
-    print("You chose: Paper")
-elif user == 3:
-    print("You chose: Scissors")
+    print("scissor")  
+    
+# game logic
+if user_1 == computer:
+    print("its draw")
+elif (user_1 ==1 and computer ==3 ) or \
+    (user_1 ==2 and computer==1 ) or \
+    (user_1 ==3 and computer ==2):
+    print("you win")
 else:
-    print("Invalid input")
-    exit()
-
-# Game logic
-if user == computer:
-    print("It's a Draw!")
-elif (user == 1 and computer == 3) or \
-     (user == 2 and computer == 1) or \
-     (user == 3 and computer == 2):
-    print("You Win!")
-else:
-    print("Computer Wins!")
+    print("computer wins")
+    
