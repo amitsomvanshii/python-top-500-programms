@@ -1,4 +1,7 @@
-name = "aliya"
-# city = "pune"
-# print(f"her name is {name}")
-# print(f"she lives in {city}")
+
+items = [1,2,3,4,5,6,7,]
+target = 4
+for item in items:
+    if item == target:
+        continue
+    print(item)

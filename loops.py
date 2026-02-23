@@ -57,10 +57,43 @@
 
 #control statements in python
 #break, continue, pass
-set_1 = {'apple','mango','banana','oranges'}
-for x in set_1:
-        if x== 'banana':
-            break
-        print(x)
+# set_1 = {'apple','mango','banana','oranges'}
+# for x in set_1:
+#         if x== 'banana':
+#             break
+#         print(x)
+
+# count = 5
+# while count > 0:
+#     if count == 3:
+#         pass
+#     else:
+#         print(count)
+#         count -=1
+
+# for i in range(5):
+#      if i == 3:
+#          continue
+#      print(i)
+    
+
+#for loop
+# language ="python"
+# for x in language:
+#     print(x)
+
+#range
+# for i in range(stop)
+# for i in range(start, stop)
+# for i in range(start, stop, step)
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(5, 10):
+#     print(i)
+    
+# for i in range(5, 20, 3):
+#     print(i)    
         
         
